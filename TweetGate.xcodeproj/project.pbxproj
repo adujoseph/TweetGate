@@ -13,7 +13,70 @@
 		042319BA2203BC1B00DF352A /* TweetGate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042319B82203BC1B00DF352A /* TweetGate.xcdatamodeld */; };
 		042319BC2203BC1C00DF352A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042319BB2203BC1C00DF352A /* Assets.xcassets */; };
 		042319BF2203BC1C00DF352A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042319BD2203BC1C00DF352A /* LaunchScreen.storyboard */; };
+		042319D92203BCA300DF352A /* Sentiments.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 042319D82203BCA300DF352A /* Sentiments.mlmodel */; };
+		044B97C22203BE5C00BD4404 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042319D12203BC6B00DF352A /* SwifteriOS.framework */; };
+		044B97C32203BE5C00BD4404 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 042319D12203BC6B00DF352A /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5470718DF88A164C73C2E88 /* Pods_TweetGate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0E516965B6FB2220EC861D /* Pods_TweetGate.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		042319CE2203BC6B00DF352A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		042319D02203BC6B00DF352A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		042319D22203BC6B00DF352A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		042319D42203BC6B00DF352A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		042319D62203BC6B00DF352A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+		044B97C42203BE5C00BD4404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		044B97C62203BE5C00BD4404 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				044B97C32203BE5C00BD4404 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		042319AE2203BC1B00DF352A /* TweetGate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetGate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +87,11 @@
 		042319BB2203BC1C00DF352A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042319BE2203BC1C00DF352A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042319C02203BC1C00DF352A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042319C62203BC6B00DF352A /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		042319D82203BCA300DF352A /* Sentiments.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Sentiments.mlmodel; sourceTree = "<group>"; };
+		0959A8F165E824AA7DF0118E /* Pods-TweetGate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetGate.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetGate/Pods-TweetGate.release.xcconfig"; sourceTree = "<group>"; };
+		A8E93603500735E6408AB6A5 /* Pods-TweetGate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetGate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TweetGate/Pods-TweetGate.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0E516965B6FB2220EC861D /* Pods_TweetGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5470718DF88A164C73C2E88 /* Pods_TweetGate.framework in Frameworks */,
+				044B97C22203BE5C00BD4404 /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +110,11 @@
 		042319A52203BC1B00DF352A = {
 			isa = PBXGroup;
 			children = (
+				042319C62203BC6B00DF352A /* Swifter.xcodeproj */,
 				042319B02203BC1B00DF352A /* TweetGate */,
 				042319AF2203BC1B00DF352A /* Products */,
+				4996F4AF6496FC75B7CE5BBF /* Pods */,
+				FD5692E40078CA6831C4065C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +129,7 @@
 		042319B02203BC1B00DF352A /* TweetGate */ = {
 			isa = PBXGroup;
 			children = (
+				042319D82203BCA300DF352A /* Sentiments.mlmodel */,
 				042319B12203BC1B00DF352A /* AppDelegate.swift */,
 				042319B32203BC1B00DF352A /* ViewController.swift */,
 				042319B52203BC1B00DF352A /* Main.storyboard */,
@@ -67,6 +141,35 @@
 			path = TweetGate;
 			sourceTree = "<group>";
 		};
+		042319C72203BC6B00DF352A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042319CF2203BC6B00DF352A /* SwifterDemoiOS.app */,
+				042319D12203BC6B00DF352A /* SwifteriOS.framework */,
+				042319D32203BC6B00DF352A /* SwifterMac.framework */,
+				042319D52203BC6B00DF352A /* SwifterDemoMac.app */,
+				042319D72203BC6B00DF352A /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4996F4AF6496FC75B7CE5BBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E93603500735E6408AB6A5 /* Pods-TweetGate.debug.xcconfig */,
+				0959A8F165E824AA7DF0118E /* Pods-TweetGate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD5692E40078CA6831C4065C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E516965B6FB2220EC861D /* Pods_TweetGate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,13 +177,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042319C32203BC1C00DF352A /* Build configuration list for PBXNativeTarget "TweetGate" */;
 			buildPhases = (
+				1929D358ECA817307553A8C6 /* [CP] Check Pods Manifest.lock */,
 				042319AA2203BC1B00DF352A /* Sources */,
 				042319AB2203BC1B00DF352A /* Frameworks */,
 				042319AC2203BC1B00DF352A /* Resources */,
+				3114E2911D5973FA820DC9D6 /* [CP] Embed Pods Frameworks */,
+				044B97C62203BE5C00BD4404 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				044B97C52203BE5C00BD4404 /* PBXTargetDependency */,
 			);
 			name = TweetGate;
 			productName = TweetGate;
@@ -113,12 +220,56 @@
 			mainGroup = 042319A52203BC1B00DF352A;
 			productRefGroup = 042319AF2203BC1B00DF352A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 042319C72203BC6B00DF352A /* Products */;
+					ProjectRef = 042319C62203BC6B00DF352A /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				042319AD2203BC1B00DF352A /* TweetGate */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		042319CF2203BC6B00DF352A /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 042319CE2203BC6B00DF352A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		042319D12203BC6B00DF352A /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 042319D02203BC6B00DF352A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		042319D32203BC6B00DF352A /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 042319D22203BC6B00DF352A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		042319D52203BC6B00DF352A /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 042319D42203BC6B00DF352A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		042319D72203BC6B00DF352A /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 042319D62203BC6B00DF352A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		042319AC2203BC1B00DF352A /* Resources */ = {
@@ -133,11 +284,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1929D358ECA817307553A8C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TweetGate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3114E2911D5973FA820DC9D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TweetGate/Pods-TweetGate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TweetGate/Pods-TweetGate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		042319AA2203BC1B00DF352A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042319D92203BCA300DF352A /* Sentiments.mlmodel in Sources */,
 				042319BA2203BC1B00DF352A /* TweetGate.xcdatamodeld in Sources */,
 				042319B42203BC1B00DF352A /* ViewController.swift in Sources */,
 				042319B22203BC1B00DF352A /* AppDelegate.swift in Sources */,
@@ -145,6 +344,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044B97C52203BE5C00BD4404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = 044B97C42203BE5C00BD4404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		042319B52203BC1B00DF352A /* Main.storyboard */ = {
@@ -284,7 +491,9 @@
 		};
 		042319C42203BC1C00DF352A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E93603500735E6408AB6A5 /* Pods-TweetGate.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JM8WUS8D2;
@@ -302,7 +511,9 @@
 		};
 		042319C52203BC1C00DF352A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0959A8F165E824AA7DF0118E /* Pods-TweetGate.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5JM8WUS8D2;
