@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     
     
-    @IBOutlet weak var instructionLbel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
     
     @IBOutlet weak var secondKeywordLabel: UILabel!
     
@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     
     let sentiments = Sentiments()
     
-   var sentimentScoreA = 100
-   var sentimentScoreB = 100
+    var sentimentScoreA = 100
+    var sentimentScoreB = 100
     
    
     
@@ -39,9 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-       
-    
+
     }
 
 
@@ -59,11 +57,14 @@ class ViewController: UIViewController {
                 second()
                 checkScores()
             } else {
-                instructionLbel.text = "one of the fields is empty"
+                instructionLabel.text = "one of the fields is empty"
             }
         }else {
-            instructionLbel.text = "please fill field"
+            instructionLabel.text = "please fill field"
         }
+        
+        sentimentScoreA = 100
+        sentimentScoreB = 100
     }
     
     func first(){
@@ -137,13 +138,18 @@ class ViewController: UIViewController {
     }
     
     func checkScores(){
+        
         let date = Date.init()
-        if sentimentScoreA > sentimentScoreB {
-            instructionLbel.text = "\(String(describing: firstTextField.text)) is more popular than \(String(describing: secondTextField.text)) as at \(date) "
-        } else {
-            instructionLbel.text = "\(String(describing: secondTextField.text)) is more popular than \(String(describing: firstTextField.text)) as at \(date) "
-
+        if let scoreA = firstTextField.text, let scoreB = secondTextField.text{
+            if sentimentScoreA > sentimentScoreB {
+                print(sentimentScoreA)
+                print("Sentiment Score B: \(sentimentScoreB)")
+                instructionLabel.text = "\(scoreA) is more popular than \(scoreB) as at \(date)"
+            } else {
+                instructionLabel.text = "\(scoreB) is more popular than \(scoreA) as at \(date)"
+            }
         }
+        
     }
     
     

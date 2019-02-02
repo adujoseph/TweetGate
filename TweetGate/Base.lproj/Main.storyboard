@@ -93,7 +93,7 @@
                         <outlet property="checkAnalysisDefaultState" destination="Sf9-7u-IyH" id="xVU-5M-LFh"/>
                         <outlet property="firstKeywordLabel" destination="Yd6-Z4-TUq" id="gxV-vR-2pb"/>
                         <outlet property="firstTextField" destination="ebA-rX-M4Y" id="Uex-GT-VTD"/>
-                        <outlet property="instructionLbel" destination="N0m-99-LMW" id="G9f-IL-NEy"/>
+                        <outlet property="instructionLabel" destination="N0m-99-LMW" id="G9f-IL-NEy"/>
                         <outlet property="secondKeywordLabel" destination="Wt4-ke-zgE" id="hCC-Df-Je2"/>
                         <outlet property="secondTextField" destination="2R2-x2-GdV" id="hft-GK-Zm3"/>
                     </connections>
